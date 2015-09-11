@@ -6,6 +6,7 @@
 @whiteBorder:1px solid #fff;
 @highlight:rgb(229,93,70);
 @rCodeVariables:#ed6a43;
+@rCodeLogicals:#775cf7;
 @rCodeStrings:#183691;
 @rCodeComments:#969896;
 @rCodeBg:#f7f7f7;
@@ -329,23 +330,23 @@ p.underDevelopment{
 
 pre{
     overflow: auto;
-color: white;
-background: @rCodeBg;
-padding: 0;
--moz-tab-size: 2;
--o-tab-size: 2;
-tab-size: 2;
--ms-word-break: break-word;
-word-break: break-word;
-word-break: break-word;
--webkit-hyphens: none;
--moz-hyphens: none;
--ms-hyphens: none;
-hyphens: none;
-position: relative;
-margin:15px 15px 15px -15px;
-height:100px;
-border-radius:5px;
+    color: white;
+    background: @rCodeBg;
+    padding: 0;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    word-break: break-word;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    position: relative;
+    margin:15px 15px 15px -15px;
+    min-height:100px;
+    border-radius:5px;
     }
     
 pre code{
@@ -370,6 +371,10 @@ display: block;
     color:@rCodeVariables;
     }
     
+.logical{
+    color:@rCodeLogicals;
+    }
+
 .punctuation{
     color:@rCodePunctuations;
     }
